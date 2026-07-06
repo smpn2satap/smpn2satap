@@ -166,7 +166,7 @@
   box-shadow: 0 20px 40px rgba(0,0,0,.08);
 
   z-index: 100000;
-  
+
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
