@@ -43,8 +43,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     const href = link.getAttribute('href');
 
-    // ignore plain '#' links
-    if (!href || href === '#') return;
+    // ignore plain '#' links but prevent default so page won't jump to top
+    if (!href) return;
+    if (href === '#') {
+      e.preventDefault();
+      return;
+    }
 
     const target = document.querySelector(href);
 
