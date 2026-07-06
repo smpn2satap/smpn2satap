@@ -76,11 +76,11 @@
     <!-- DESKTOP MENU -->
     <nav class="desktop-menu">
 
-      <a href="#">Beranda</a>
-      <a href="#">Profil</a>
-      <a href="#">Galeri</a>
-      <a href="#">Berita</a>
-      <a href="#">Kontak</a>
+      <a href="#home">Beranda</a>
+      <a href="#tentang">Profil</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#berita">Berita</a>
+      <a href="#kontak">Kontak</a>
 
     </nav>
 
@@ -104,11 +104,11 @@
 <!-- MOBILE MENU -->
 <div id="mobile-menu" class="mobile-menu">
 
-  <a href="#">Beranda</a>
-  <a href="#">Profil</a>
-  <a href="#">Galeri</a>
-  <a href="#">Berita</a>
-  <a href="#">Kontak</a>
+  <a href="#home">Beranda</a>
+  <a href="#tentang">Profil</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#berita">Berita</a>
+  <a href="#kontak">Kontak</a>
 
 </div>
 
@@ -116,7 +116,7 @@
      HERO SECTION PREMIUM
 ======================================== -->
 
-<section class="hero-section">
+<section class="hero-section" id="home">
 
   <!-- BG IMAGE -->
   <img
@@ -284,6 +284,22 @@
   <!-- BOTTOM CURVE -->
   <div class="hero-wave"></div>
 
+</section>
+
+<!-- PENGUMUMAN (placeholder) -->
+<section id="pengumuman" class="info-section">
+  <div class="container">
+    <h2 class="section-subtitle">Pengumuman</h2>
+    <p style="margin-top:8px;">Belum ada pengumuman saat ini.</p>
+  </div>
+</section>
+
+<!-- AGENDA (placeholder) -->
+<section id="agenda" class="info-section">
+  <div class="container">
+    <h2 class="section-subtitle">Agenda Sekolah</h2>
+    <p style="margin-top:8px;">Tidak ada agenda tercatat.</p>
+  </div>
 </section>
 
 <!-- SAMBUTAN -->
@@ -723,7 +739,7 @@
 </section>
 
 <!-- PRESTASI -->
-<section class="prestations-section">
+<section class="prestations-section" id="akademik">
 
   <!-- GLOW -->
   <div class="prestations-glow one"></div>
@@ -882,7 +898,7 @@
 </section>
 
 <!-- GALERI -->
-<section class="gallery-section">
+<section class="gallery-section" id="galeri">
 
   <!-- SHAPE -->
   <div class="gallery-shape one"></div>
@@ -1061,7 +1077,7 @@
 </section>
 
 <!-- BERITA -->
-<section class="news-section">
+<section class="news-section" id="berita">
 
   <!-- SHAPE -->
   <div class="news-shape one"></div>
@@ -1184,13 +1200,7 @@
 
           </p>
 
-          <a href="#" class="news-link">
 
-            Baca Selengkapnya
-
-            <i class="ri-arrow-right-line"></i>
-
-          </a>
 
         </div>
 
@@ -1234,13 +1244,6 @@
 
           </p>
 
-          <a href="#" class="news-link">
-
-            Baca Selengkapnya
-
-            <i class="ri-arrow-right-line"></i>
-
-          </a>
 
         </div>
 
@@ -1313,7 +1316,7 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" id="kontak">
 
   <!-- SHAPE -->
   <div class="footer-shape"></div>
@@ -1387,11 +1390,11 @@
 
         <ul class="footer-links">
 
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Profil</a></li>
-          <li><a href="#">Akademik</a></li>
-          <li><a href="#">Galeri</a></li>
-          <li><a href="#">Kontak</a></li>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#tentang">Profil</a></li>
+          <li><a href="#akademik">Akademik</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
 
         </ul>
 
@@ -1406,10 +1409,9 @@
 
         <ul class="footer-links">
 
-          <li><a href="#">PPDB 2025</a></li>
-          <li><a href="#">Berita Sekolah</a></li>
-          <li><a href="#">Pengumuman</a></li>
-          <li><a href="#">Agenda Sekolah</a></li>
+          <li><a href="#berita">Berita Sekolah</a></li>
+          <li><a href="#pengumuman">Pengumuman</a></li>
+          <li><a href="#agenda">Agenda Sekolah</a></li>
 
         </ul>
 
