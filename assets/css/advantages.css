@@ -1,0 +1,177 @@
+.advantages-section{
+  position:relative;
+
+  padding:120px 0;
+
+  overflow:hidden;
+
+  background:white;
+}
+
+/* SHAPE */
+.advantages-shape{
+  position:absolute;
+  border-radius:50%;
+
+  filter:blur(100px);
+}
+
+.advantages-shape.one{
+  width:350px;
+  height:350px;
+
+  background:#2563eb;
+
+  opacity:.12;
+
+  top:-100px;
+  right:-100px;
+}
+
+.advantages-shape.two{
+  width:280px;
+  height:280px;
+
+  background:#FFD43B;
+
+  opacity:.12;
+
+  bottom:-100px;
+  left:-100px;
+}
+
+/* TITLE */
+.section-heading{
+  text-align:center;
+
+  max-width:850px;
+
+  margin:auto;
+  margin-bottom:80px;
+}
+
+.section-heading h2{
+  font-size:58px;
+  line-height:1.2;
+
+  color:#071739;
+
+  font-weight:800;
+}
+
+.section-heading span{
+  display:block;
+  color:#2563eb;
+}
+
+.section-description{
+  margin-top:24px;
+
+  color:#64748b;
+
+  line-height:2;
+}
+
+/* GRID */
+.advantages-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+
+  gap:30px;
+}
+
+/* CARD */
+.advantage-card{
+  position:relative;
+
+  background:white;
+
+  border-radius:35px;
+
+  padding:40px 30px;
+
+  overflow:hidden;
+
+  transition:.5s;
+
+  box-shadow:
+  0 15px 40px rgba(0,0,0,.05);
+}
+
+.advantage-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(37,99,235,.06),
+    rgba(255,212,59,.06)
+  );
+
+  opacity:0;
+
+  transition:.5s;
+}
+
+.advantage-card:hover{
+  transform:translateY(-10px);
+}
+
+.advantage-card:hover::before{
+  opacity:1;
+}
+
+/* ICON */
+.advantage-icon{
+  width:90px;
+  height:90px;
+
+  border-radius:28px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:38px;
+
+  margin-bottom:30px;
+
+  position:relative;
+  z-index:2;
+}
+
+.advantage-icon.blue{
+  background:#dbeafe;
+  color:#2563eb;
+}
+
+.advantage-icon.yellow{
+  background:#fef3c7;
+  color:#f59e0b;
+}
+
+/* TEXT */
+.advantage-card h3{
+  position:relative;
+  z-index:2;
+
+  font-size:26px;
+  font-weight:700;
+
+  color:#071739;
+
+  margin-bottom:18px;
+}
+
+.advantage-card p{
+  position:relative;
+  z-index:2;
+
+  color:#64748b;
+
+  line-height:2;
+}

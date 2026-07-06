@@ -1,0 +1,94 @@
+/* LOADER */
+#loader{
+  position:fixed;
+  inset:0;
+
+  background:#071739;
+
+  z-index:99999;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:.8s;
+}
+
+.loader{
+  width:90px;
+  height:90px;
+
+  border-radius:50%;
+
+  border:8px solid rgba(255,255,255,.1);
+
+  border-top:8px solid #FFD43B;
+
+  animation:spin 1s linear infinite;
+}
+
+.hide-loader{
+  opacity:0;
+  visibility:hidden;
+}
+
+@keyframes spin{
+
+  100%{
+    transform:rotate(360deg);
+  }
+
+}
+
+/* NAVBAR SCROLL */
+.navbar-scroll{
+
+  background:rgba(7,23,57,.95);
+
+  backdrop-filter:blur(20px);
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.15);
+
+}
+
+/* MOBILE MENU */
+#mobile-menu{
+
+  max-height:0;
+
+  overflow:hidden;
+
+  transition:.5s;
+}
+
+.show-mobile-menu{
+  max-height:500px;
+}
+
+/* BUTTON HOVER */
+button{
+  cursor:pointer;
+}
+
+button:hover{
+  transform:translateY(-4px);
+}
+
+/* IMAGE ANIMATION */
+img{
+  user-select:none;
+}
+
+/* FLOAT */
+@keyframes floating{
+
+  0%,100%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+
+}

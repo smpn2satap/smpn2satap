@@ -1,0 +1,303 @@
+/* ========================================
+   NAVBAR
+======================================== */
+
+#navbar{
+  position:fixed;
+  top:0;
+  left:0;
+
+  width:100%;
+
+  z-index:9999;
+
+  padding:18px 0;
+
+  transition:.4s ease;
+}
+
+#navbar.scrolled{
+  background:rgba(7,23,57,.92);
+
+  backdrop-filter:blur(20px);
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.15);
+}
+
+.navbar-content{
+
+  height:88px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+
+  color:white;
+}
+
+.logo img{
+  width:55px;
+}
+
+.logo h1{
+  font-size:22px;
+  font-weight:700;
+}
+
+.logo p{
+  font-size:13px;
+  opacity:.8;
+}
+
+/* DESKTOP MENU */
+.desktop-menu{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.desktop-menu a{
+  color:white;
+  font-weight:600;
+
+  position:relative;
+}
+
+.desktop-menu a::after{
+  content:"";
+
+  position:absolute;
+  left:0;
+  bottom:-8px;
+
+  width:0%;
+  height:3px;
+
+  background:#FFD43B;
+
+  transition:.4s;
+}
+
+.desktop-menu a:hover::after{
+  width:100%;
+}
+
+/* RIGHT */
+.navbar-right{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+/* PPDB */
+.ppdb-btn{
+  background:#FFD43B;
+  color:#071739;
+
+  border:none;
+
+  padding:14px 22px;
+
+  border-radius:14px;
+
+  font-weight:700;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  cursor:pointer;
+}
+
+/* MENU BTN */
+.menu-btn{
+  width:50px;
+  height:50px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,.12);
+
+  color:white;
+
+  font-size:26px;
+
+  cursor:pointer;
+
+  display:none;
+
+  z-index:10001;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+  position: fixed;
+  top: 124px;
+
+  max-height: 100vh;
+  overflow-y: visible;
+  height: auto;
+
+  width: 100%;
+
+  background: #fff;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  border-radius: 0 0 24px 24px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+
+  z-index: 100000;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+
+  transition: .4s ease;
+}
+
+/* @media(min-width:993px){
+
+  .mobile-menu{
+
+    opacity:0 !important;
+    visibility:hidden !important;
+
+    transform:translateY(-20px) !important;
+
+  }
+
+} */
+
+/* ACTIVE */
+.mobile-menu.active{
+
+  opacity:1;
+  visibility:visible;
+
+  transform:translateY(0);
+
+}
+
+/* LINK */
+.mobile-menu a{
+
+  color:#071739;
+
+  font-size:17px;
+  font-weight:600;
+
+  text-decoration:none;
+
+  padding:16px 18px;
+
+  border-radius:16px;
+
+  transition:.3s ease;
+
+}
+
+.mobile-menu a:hover{
+
+  background:#F1F5F9;
+
+  color:#2563EB;
+
+}
+
+/* MOBILE BUTTON */
+.menu-btn{
+
+  width:52px;
+  height:52px;
+
+  border:none;
+
+  border-radius:16px;
+
+  background:#2563EB;
+
+  color:white;
+
+  font-size:24px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+
+}
+
+/* DESKTOP */
+@media(min-width:993px){
+
+  .mobile-menu{
+    display:none;
+  }
+
+  .menu-btn{
+    display:none;
+  }
+
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media(max-width:991px){
+
+  .desktop-menu{
+    display:none;
+  }
+
+  .ppdb-btn{
+    display:none;
+  }
+
+  .menu-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .logo h1{
+    font-size:18px;
+  }
+
+  .logo p{
+    font-size:12px;
+  }
+
+  .logo img{
+    width:45px;
+  }
+
+}
+
+/* NOTE:
+  Bagian ini dihapus karena mengubah style link mobile-menu secara paksa menggunakan !important.
+  Itu menyebabkan tampilan menu (termasuk kemungkinan dropdown/ekspansi) jadi rusak/kontras.
+*/

@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  overflow-x:hidden;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.container{
+  max-width:1280px;
+  margin:auto;
+  padding-inline:24px;
+}
+
+/* LOADER */
+#loader{
+  position:fixed;
+  inset:0;
+
+  background:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  z-index:99999;
+}
+
+.loader{
+  width:65px;
+  height:65px;
+
+  border-radius:50%;
+
+  border:5px solid #dbeafe;
+  border-top-color:#2563eb;
+
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+  to{
+    transform:rotate(360deg);
+  }
+
+}

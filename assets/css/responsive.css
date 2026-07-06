@@ -1,0 +1,264 @@
+/* ===================================
+   RESPONSIVE WEBSITE SMPN 2 SATAP
+=================================== */
+
+
+/* ===================================
+   LARGE TABLET
+=================================== */
+
+@media(max-width:1100px){
+
+  /* NAVBAR */
+  .desktop-menu{
+    display:none;
+  }
+
+  .ppdb-btn{
+    display:none;
+  }
+
+  #menu-btn{
+    display:flex;
+  }
+
+  .navbar-wrapper{
+    padding:18px 0;
+  }
+
+  /* HERO */
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:60px;
+  }
+
+  .hero-right{
+    display:none;
+  }
+
+  .hero-text h1,
+  .hero-title{
+    font-size:68px;
+    line-height:1.1;
+  }
+
+  .hero-stats,
+  .stats-container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* WELCOME */
+  .welcome-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* ADVANTAGES */
+  .advantages-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* FACILITIES */
+  .facilities-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* PRESTATIONS */
+  .prestations-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* NEWS */
+  .news-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* FOOTER */
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media(max-width:768px){
+
+  /* NAVBAR */
+  .navbar-wrapper{
+    padding:14px 0;
+  }
+
+  .logo img{
+    width:45px;
+  }
+
+  .logo h1{
+    font-size:18px;
+  }
+
+  .logo p{
+    font-size:12px;
+  }
+
+  /* HERO */
+  .hero-section,
+  .hero{
+    padding-top:130px;
+    padding-bottom:260px;
+  }
+
+  .hero-text h1,
+  .hero-title{
+    font-size:48px;
+    line-height:1.1;
+  }
+
+  .hero-description{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary{
+    width:100%;
+    justify-content:center;
+  }
+
+  .hero-stats,
+  .stats-container{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .stats-item{
+    justify-content:center;
+    text-align:center;
+  }
+
+  .scroll-indicator{
+    display:none;
+  }
+
+  /* WELCOME */
+  .welcome-section{
+    padding-top:160px;
+  }
+
+  .welcome-content h2,
+  .welcome-title{
+    font-size:42px;
+  }
+
+  .welcome-features{
+    grid-template-columns:1fr;
+  }
+
+  /* SECTION TITLE */
+  .section-heading h2,
+  .facilities-title,
+  .gallery-title,
+  .prestations-title,
+  .cta-title{
+    font-size:42px;
+  }
+
+  /* ADVANTAGES */
+  .advantages-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* FACILITIES */
+  .facilities-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .facilities-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* GALLERY */
+  .gallery-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .gallery-card{
+    height:420px;
+  }
+
+  /* NEWS */
+  .news-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* FOOTER */
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-bottom-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
+
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:480px){
+
+  /* HERO */
+  .hero-text h1,
+  .hero-title{
+    font-size:38px;
+  }
+
+  .hero-subtitle{
+    font-size:18px;
+  }
+
+  .hero-description{
+    font-size:15px;
+  }
+
+  /* TITLE */
+  .section-heading h2,
+  .welcome-title,
+  .facilities-title,
+  .gallery-title,
+  .prestations-title,
+  .cta-title{
+    font-size:32px;
+  }
+
+  /* STATS */
+  .stats-container{
+    padding:30px 20px;
+  }
+
+  /* CARD */
+  .gallery-card{
+    height:350px;
+  }
+
+  .prestations-card{
+    height:320px;
+  }
+
+  .prestations-card h3{
+    font-size:50px;
+  }
+
+}
