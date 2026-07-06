@@ -146,8 +146,8 @@
   position: fixed;
   top: 124px;
 
-  max-height: 100vh;
-  overflow-y: visible;
+  max-height: 0;
+  overflow-y: hidden;
   height: auto;
 
   width: 100%;
@@ -170,7 +170,7 @@
   visibility: hidden;
   transform: translateY(-20px);
 
-  transition: .4s ease;
+  transition: max-height 0.5s ease;
 }
 
 /* @media(min-width:993px){
@@ -188,7 +188,7 @@
 
 /* ACTIVE */
 .mobile-menu.active{
-
+max-height: 100vh;
   opacity:1;
   visibility:visible;
 
